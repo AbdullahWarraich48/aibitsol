@@ -1,3 +1,35 @@
+<?php
+$proposalFormSuccess = false;
+$proposalFormSuccessMessage = '';
+$proposalFormErrorMessage = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    require_once __DIR__ . '/../includes/proposal_mailer.php';
+    $proposalSubmissionResult = processProposalFormSubmission($_POST);
+
+    if ($proposalSubmissionResult['success']) {
+        $proposalFormSuccess = true;
+        $proposalFormSuccessMessage = $proposalSubmissionResult['message'] ?? "Your proposal has been submitted successfully. We'll reach out within 24 hours.";
+        $_POST = [];
+    } else {
+        $proposalFormErrorMessage = $proposalSubmissionResult['message'] ?? 'Failed to send message. Please try again.';
+    }
+}
+
+$showProposalSuccess = $proposalFormSuccess || isset($_GET['success']);
+$proposalSuccessBannerText = $proposalFormSuccessMessage;
+if (!$proposalSuccessBannerText && isset($_GET['success'])) {
+    $proposalSuccessBannerText = "Your proposal has been submitted successfully. We'll reach out within 24 hours.";
+}
+
+$showProposalError = !empty($proposalFormErrorMessage) || isset($_GET['error']);
+$proposalErrorBannerText = $proposalFormErrorMessage;
+if (!$proposalErrorBannerText && isset($_GET['error'])) {
+    $proposalErrorBannerText = $_GET['error'];
+}
+
+$proposalFormAction = htmlspecialchars($_SERVER['REQUEST_URI'] ?? '/?page=get-proposal', ENT_QUOTES, 'UTF-8');
+?>
 <!-- Get Proposal Page -->
 <section class="hero-bg text-white section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +51,30 @@
                 <p class="text-gray-600">Fill out the form below and we'll get back to you with a detailed proposal within 24 hours.</p>
             </div>
             
-            <form class="space-y-6" method="POST" action="includes/contact_handler.php">
+            <?php if ($showProposalSuccess): ?>
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-6 flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="font-semibold"><?php echo htmlspecialchars($proposalSuccessBannerText, ENT_QUOTES, 'UTF-8'); ?></span>
+            </div>
+            <?php endif; ?>
+
+            <?php if ($showProposalError): ?>
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-6 flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="font-semibold">Error:</span>
+                <span class="ml-2"><?php echo htmlspecialchars($proposalErrorBannerText, ENT_QUOTES, 'UTF-8'); ?></span>
+            </div>
+            <?php endif; ?>
+
+            <div id="proposal-form-error" class="hidden mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                Please fill in all required fields.
+            </div>
+
+            <form id="proposal-form" class="space-y-6" method="POST" action="<?php echo $proposalFormAction; ?>" novalidate>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
@@ -110,3 +165,54 @@
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('proposal-form');
+    const errorBanner = document.getElementById('proposal-form-error');
+    if (!form) return;
+
+    const submitButton = form.querySelector('button[type="submit"]');
+    const requiredFields = form.querySelectorAll('[required]');
+
+    form.addEventListener('submit', function (event) {
+        let hasErrors = false;
+
+        requiredFields.forEach(field => {
+            const value = field.value.trim();
+            if (!value) {
+                hasErrors = true;
+                field.classList.add('border-red-500', 'focus:ring-red-500');
+                field.setAttribute('aria-invalid', 'true');
+            } else {
+                field.classList.remove('border-red-500', 'focus:ring-red-500');
+                field.removeAttribute('aria-invalid');
+            }
+        });
+
+        if (hasErrors) {
+            event.preventDefault();
+            if (errorBanner) {
+                errorBanner.classList.remove('hidden');
+            }
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.innerText = 'Request Proposal';
+            }
+            const firstError = Array.from(requiredFields).find(field => !field.value.trim());
+            if (firstError) {
+                firstError.focus();
+            }
+            return;
+        }
+
+        if (errorBanner) {
+            errorBanner.classList.add('hidden');
+        }
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.innerText = 'Sending...';
+        }
+    });
+});
+</script>
