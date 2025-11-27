@@ -5,11 +5,11 @@
         <div class="text-center max-w-4xl mx-auto">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 ring-1 ring-white/20 mb-5">
                 <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span class="text-sm">Full-Funnel Growth Marketing</span>
+                <span class="text-sm">Modern UI/UX & Creative Design</span>
             </div>
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">Campaigns Built To Drive Revenue</h1>
-            <p class="text-xl text-blue-100 mb-2">Lead with compelling stories, follow with measurable impact.</p>
-            <p class="text-lg text-blue-100/90 mb-8">We design marketing motions that attract the right audience, nurture intent, and turn attention into sales pipeline.</p>
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">UI/UX & Creative Design</h1>
+            <p class="text-xl text-blue-100 mb-2">Designs that speak, experiences that stay</p>
+            <p class="text-lg text-blue-100/90 mb-8">Modern visuals and intuitive interfaces that turn casual visitors into loyal users.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/?page=get-proposal" aria-label="Get a proposal" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center justify-center gap-2">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="opacity-90"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -28,16 +28,16 @@
         </div>
         <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
             <div class="bg-white/10 rounded-xl p-4 ring-1 ring-white/15">
-                <div class="text-2xl font-extrabold">4×</div>
-                <div class="text-sm text-blue-100">Average pipeline lift after integrated launch</div>
+                <div class="text-2xl font-extrabold">400%</div>
+                <div class="text-sm text-blue-100">Potential increase in conversions with solid UX</div>
             </div>
             <div class="bg-white/10 rounded-xl p-4 ring-1 ring-white/15">
-                <div class="text-2xl font-extrabold">37%</div>
-                <div class="text-sm text-blue-100">Faster sales cycles with lifecycle automation</div>
+                <div class="text-2xl font-extrabold">94%</div>
+                <div class="text-sm text-blue-100">Users judge a brand by its design</div>
             </div>
             <div class="bg-white/10 rounded-xl p-4 ring-1 ring-white/15">
-                <div class="text-2xl font-extrabold">62%</div>
-                <div class="text-sm text-blue-100">Lower CPL when creative + data stay aligned</div>
+                <div class="text-2xl font-extrabold">5x</div>
+                <div class="text-sm text-blue-100">Mobile users abandon non-optimized experiences</div>
             </div>
         </div>
     </div>
@@ -50,16 +50,16 @@
 <!-- Section: Process | Make Every Interaction Effortless -->
 <section class="gradient-bg text-white section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-5xl font-bold mb-6">Attract. Nurture. Convert. Repeat.</h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">We build marketing systems that pair bold creative with always-on optimization, so every touchpoint earns attention and advances revenue.</p>
+        <h2 class="text-3xl md:text-5xl font-bold mb-6">Make Every Interaction Effortless And Enjoyable</h2>
+        <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">Get intuitive, visually striking designs that keep visitors engaged, build trust, and turn every interaction into a lasting relationship.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/?page=digital-marketing" class="bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2" aria-label="View marketing services">
+            <a href="/?page=web-app-development" class="bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2" aria-label="Build my web app">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-                Explore Digital Marketing
+                Build My Web App
             </a>
             <a href="/?page=book-an-expert" class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition-colors inline-flex items-center justify-center gap-2" aria-label="Get free consultation">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 7h8M6 11h12M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Book a Growth Audit
+                Get Free Consultation
             </a>
         </div>
     </div>
@@ -81,25 +81,25 @@
             <div>
                 <div class="inline-flex items-center bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
                     <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
-                    Demand Playbooks
+                    Thoughtful Interfaces
                 </div>
                 <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-                    <span class="block">Create Buyer Journeys People Love</span>
-                    <span class="block bg-gradient-to-r from-primary to-sky-600 bg-clip-text text-transparent">And Sales Teams Trust</span>
+                    <span class="block">Create Lasting Impressions</span>
+                    <span class="block bg-gradient-to-r from-primary to-sky-600 bg-clip-text text-transparent">Through Thoughtful Interfaces</span>
                 </h2>
-                <p class="text-lg text-gray-600 mb-6">Show up with consistent messaging, helpful content, and personalized follow-ups. We orchestrate campaigns across every channel your buyers touch.</p>
+                <p class="text-lg text-gray-600 mb-6">Delight visitors from the first click with inclusive, visually stunning interfaces that keep them engaged and coming back.</p>
                 <ul class="text-gray-700 space-y-2 mb-8">
                     <li class="flex items-start">
                         <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Offer architecture, creative, and landing experiences mapped to intent
+                        Accessible, inclusive design across devices and contexts
                     </li>
                     <li class="flex items-start">
                         <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Paid + organic channels sequenced for reach, remarketing, and conversion
+                        Intuitive navigation and purposeful interaction patterns
                     </li>
                     <li class="flex items-start">
                         <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5" viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                        Shared analytics that expose CAC, ROAS, velocity, and next experiments
+                        Visual consistency that amplifies brand trust
                     </li>
                 </ul>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -118,29 +118,29 @@
                     <div class="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-3">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 4v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V7l9-4z" stroke="currentColor" stroke-width="2"/></svg>
                     </div>
-                    <h3 class="text-lg font-semibold mb-1">Paid Media Pods</h3>
-                    <p class="text-gray-600">Launch, learn, and scale ads with agile creative + data squads.</p>
+                    <h3 class="text-lg font-semibold mb-1">Responsive</h3>
+                    <p class="text-gray-600">Fast and responsive</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200 hover:shadow-lg transition-shadow">
                     <div class="w-10 h-10 rounded-lg bg-sky-100 text-sky-600 flex items-center justify-center mb-3">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h16M4 8h16M4 16h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
                     </div>
-                    <h3 class="text-lg font-semibold mb-1">Content + SEO Labs</h3>
-                    <p class="text-gray-600">Research-backed stories that fuel organic growth and sales enablement.</p>
+                    <h3 class="text-lg font-semibold mb-1">Brand Consistency</h3>
+                    <p class="text-gray-600">Consistent with brand (colour, style, tone)</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200 hover:shadow-lg transition-shadow">
                     <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center mb-3">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 6l-8 4 8 4 8-4-8-4z" stroke="currentColor" stroke-width="2"/></svg>
                     </div>
-                    <h3 class="text-lg font-semibold mb-1">Lifecycle Automation</h3>
-                    <p class="text-gray-600">Behavior-based email, SMS, and in-app journeys that progress leads.</p>
+                    <h3 class="text-lg font-semibold mb-1">Intuitive Design</h3>
+                    <p class="text-gray-600">Clean, appealing, and easy to use</p>
                 </div>
                 <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200 hover:shadow-lg transition-shadow">
                     <div class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center mb-3">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12h7l2 3 3-6 3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </div>
-                    <h3 class="text-lg font-semibold mb-1">Revenue Intelligence</h3>
-                    <p class="text-gray-600">Unified dashboards for CAC, ROAS, LTV, and sales velocity.</p>
+                    <h3 class="text-lg font-semibold mb-1">Smart Navigation</h3>
+                    <p class="text-gray-600">Optimized for users to find what they want quickly</p>
                 </div>
             </div>
         </div>
@@ -152,45 +152,45 @@
 <section class="bg-gray-50 section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Marketing Outcomes We Deliver</h2>
-            <p class="text-lg text-gray-600">From pipeline to lifetime value, every play we run ties back to the KPIs revenue teams rely on.</p>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Immediate Benefits Of Our Services</h2>
+            <p class="text-lg text-gray-600">See how great design elevates user experience and keeps customers coming back.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Qualified Pipeline</h3>
-                <p class="text-gray-600">Campaigns map to CRM stages so you see the opportunities marketing creates.</p>
+                <h3 class="text-lg font-semibold mb-2">Better First Impressions</h3>
+                <p class="text-gray-600">Builds trust and credibility with professional design.</p>
             </div>
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Lower CAC</h3>
-                <p class="text-gray-600">Paid, organic, and referral channels optimized around profitable acquisition costs.</p>
+                <h3 class="text-lg font-semibold mb-2">Stronger Brand Trust</h3>
+                <p class="text-gray-600">Consistent design, typography, and messaging build credibility.</p>
             </div>
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Revenue Velocity</h3>
-                <p class="text-gray-600">Lifecycle automation trims weeks off average sales cycles.</p>
+                <h3 class="text-lg font-semibold mb-2">Delighted Users</h3>
+                <p class="text-gray-600">Intuitive navigation and attractive visuals create a positive first impression.</p>
             </div>
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Customer LTV</h3>
-                <p class="text-gray-600">Onboarding, upsell, and loyalty programs that grow accounts over time.</p>
+                <h3 class="text-lg font-semibold mb-2">Easier Navigation and Use</h3>
+                <p class="text-gray-600">Users find what they need quickly with intuitive UX.</p>
             </div>
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Brand Authority</h3>
-                <p class="text-gray-600">Research-based content that earns trust and fuels organic demand.</p>
+                <h3 class="text-lg font-semibold mb-2">Enhanced UI/UX</h3>
+                <p class="text-gray-600">A seamless, intuitive interface adapts to every screen, keeping visitors engaged.</p>
             </div>
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Channel Efficiency</h3>
-                <p class="text-gray-600">Real-time media mix modeling keeps spend focused on the highest ROAS.</p>
+                <h3 class="text-lg font-semibold mb-2">Higher Conversion Rates</h3>
+                <p class="text-gray-600">More sign-ups, more sales, more leads through optimized design.</p>
             </div>
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Sales Alignment</h3>
-                <p class="text-gray-600">Shared GTM calendars, enablement kits, and win stories for every campaign.</p>
+                <h3 class="text-lg font-semibold mb-2">Responsiveness</h3>
+                <p class="text-gray-600">Works smoothly on mobile, tablet, desktop for all users.</p>
             </div>
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Test Velocity</h3>
-                <p class="text-gray-600">Weekly experiments across creative, offers, and landing pages.</p>
-            </div>
+                <h3 class="text-lg font-semibold mb-2">Fewer Errors</h3>
+                <p class="text-gray-600">Optimized performance for seamless experiences and lower bounce rates.</p>
+                </div>
             <div class="bg-white rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-lg font-semibold mb-2">Forecast Clarity</h3>
-                <p class="text-gray-600">Cleaner reporting and confident projections for hiring and budgeting.</p>
+                <h3 class="text-lg font-semibold mb-2">Long-Term Savings</h3>
+                <p class="text-gray-600">Avoid redesigns or rework with solid foundations.</p>
             </div>
         </div>
     </div>
@@ -201,29 +201,29 @@
 <section class="bg-white section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-12">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">The Cost Of Fragmented Marketing</h2>
-            <p class="text-lg text-gray-600">When campaigns run in silos, budgets inflate while impact stalls.</p>
-            <div class="text-5xl md:text-6xl font-extrabold text-primary mt-4">53%</div>
-            <p class="text-gray-600 mt-2">of marketing leaders cite disconnected tooling as their top revenue blocker.</p>
-        </div>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">The Cost Of Poor UI/UX Design</h2>
+            <p class="text-lg text-gray-600">Good UX can increase ecommerce conversion rate by up to <span class="font-semibold">400%</span>.</p>
+            <div class="text-5xl md:text-6xl font-extrabold text-primary mt-4">400%</div>
+            <p class="text-gray-600 mt-2">of conversion rate is increased by well-designed UI and excellent UX strategy</p>
+                </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="bg-gray-50 rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-xl font-semibold mb-2">Wasted Ad Spend</h3>
-                <p class="text-gray-600 mb-4">Campaigns lack creative testing and post-click optimization.</p>
-                <div class="text-3xl font-bold text-primary">28%</div>
-                <p class="text-gray-600 mt-2">Average media dollars burned when analytics lag.</p>
+                <h3 class="text-xl font-semibold mb-2">Poor / Slow-loading Interfaces</h3>
+                <p class="text-gray-600 mb-4">People abandon shopping carts or sign-ups because the site slows or confuses.</p>
+                <div class="text-3xl font-bold text-primary">5x</div>
+                <p class="text-gray-600 mt-2">Mobile users are 5x more likely to abandon a task if the site isn't mobile-optimized.</p>
             </div>
             <div class="bg-gray-50 rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-xl font-semibold mb-2">Leads Without Context</h3>
-                <p class="text-gray-600 mb-4">Hand-offs break because scoring, notes, and journeys live in different tools.</p>
-                <div class="text-3xl font-bold text-primary">64%</div>
-                <p class="text-gray-600 mt-2">Of B2B buyers drop when follow-up misses the mark.</p>
-            </div>
+                <h3 class="text-xl font-semibold mb-2">Poor Mobile Optimization</h3>
+                <p class="text-gray-600 mb-4">Large share of traffic from mobile users; potential customers drop off early.</p>
+                <div class="text-3xl font-bold text-primary">94%</div>
+                <p class="text-gray-600 mt-2">of users judge a website based on its design.</p>
+                </div>
             <div class="bg-gray-50 rounded-2xl p-6 ring-1 ring-gray-200">
-                <h3 class="text-xl font-semibold mb-2">Unclear ROI</h3>
-                <p class="text-gray-600 mb-4">Reporting stitched manually means decisions lag by weeks.</p>
-                <div class="text-3xl font-bold text-primary">3×</div>
-                <p class="text-gray-600 mt-2">More likely to miss revenue goals without shared dashboards.</p>
+                <h3 class="text-xl font-semibold mb-2">Unattractive Design</h3>
+                <p class="text-gray-600 mb-4">Visitors distrust brands, leave immediately, or bounce without exploring.</p>
+                <div class="text-3xl font-bold text-primary">35%</div>
+                <p class="text-gray-600 mt-2">of bad UX could drain up to potential sales revenue.</p>
             </div>
         </div>
     </div>

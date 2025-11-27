@@ -37,6 +37,12 @@ if (in_array($page, $partner_pages)) {
     exit;
 }
 
+// Blog landing temporarily hosted on the Web Design blog page
+if ($page === 'blog') {
+    header('Location: /?page=blogs-web-design', true, 302);
+    exit;
+}
+
 $allowed_pages = [
     'home', 'services', 'about', 'contact', 'blog', 'careers', 'partners', 'custom-partnership', 'affiliate-partner',
     'website-that-work', 'web-app-development', 'mob-app-development', 'ui-ux', 'mobile-experiences',
@@ -44,7 +50,7 @@ $allowed_pages = [
     'custom-software-development', 'it-staff', 'get-proposal', 'book-an-expert',
     'blogs-ai-automation', 'blogs-business-growth', 'blogs-custom-marketing',
     'blogs-custom-software', 'blogs-it-staff', 'blogs-mobile-app', 'blogs-social-marketing',
-    'blogs-web-design', 'resources', 'coming-soon', 'hotel-about', 'seo-marketing', 'custom-branding-marketing-kit', 'resources-web-design', 'blogs-web-design-full',
+    'blogs-web-design', 'blogs-ui-ux-design', 'resources', 'coming-soon', 'hotel-about', 'seo-marketing', 'custom-branding-marketing-kit', 'resources-web-design', 'blogs-web-design-full',
     'privacy-policy', 'terms-conditions'
 ];
 
@@ -85,6 +91,7 @@ $page_titles = [
     'blogs-mobile-app' => 'Mobile App Blog - AiBit Sol',
     'blogs-social-marketing' => 'Social Marketing Blog - AiBit Sol',
     'blogs-web-design' => 'Web Design Blog - AiBit Sol',
+    'blogs-ui-ux-design' => 'UI/UX & Creative Design Blog - AiBit Sol',
     'resources' => 'Resources - AiBit Sol',
     'coming-soon' => 'Coming Soon - AiBit Sol',
     'hotel-about' => 'Blog & Content Marketing | Hotel Case Study - AiBit Sol',
@@ -129,6 +136,7 @@ $page_descriptions = [
     'blogs-mobile-app' => 'Mobile app development insights.',
     'blogs-social-marketing' => 'Social media marketing insights.',
     'blogs-web-design' => 'Web design tips and insights.',
+    'blogs-ui-ux-design' => 'UI/UX inspiration, processes, and best practices.',
     'resources' => 'Resources and tools for your business.',
     'coming-soon' => 'This page is coming soon.',
     'hotel-about' => 'Learn how effective content marketing and SEO strategies can transform hospitality businesses and attract more guests.',

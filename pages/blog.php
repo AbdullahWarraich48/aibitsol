@@ -1,7 +1,7 @@
 <?php
 /**
- * Temporary shim: reuse the Blogs Custom Marketing layout/content
- * for the Blog landing page so the PHP site matches the React version.
+ * Temporary shim: reuse the Web Design blog content until the standalone
+ * blog landing page is ready in PHP.
  */
-include __DIR__ . '/blogs-custom-marketing.php';
+include __DIR__ . '/blogs-web-design.php';
 
