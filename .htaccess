@@ -1,0 +1,85 @@
+RewriteEngine On
+
+# ============================================================================
+# HTTPS ENFORCEMENT - Force redirect HTTP to HTTPS
+# ============================================================================
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Handle clean URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ index.php?page=$1 [L,QSA]
+
+# Redirect root to home
+RewriteRule ^$ index.php?page=home [L,QSA]
+
+# Handle service pages
+RewriteRule ^website-that-work/?$ index.php?page=website-that-work [L,QSA]
+RewriteRule ^web-app-development/?$ index.php?page=web-app-development [L,QSA]
+RewriteRule ^mob-app-development/?$ index.php?page=mob-app-development [L,QSA]
+RewriteRule ^ui-ux/?$ index.php?page=ui-ux [L,QSA]
+RewriteRule ^mvp/?$ index.php?page=mvp [L,QSA]
+RewriteRule ^custom-ai-solution/?$ index.php?page=custom-ai-solution [L,QSA]
+RewriteRule ^digital-marketing/?$ index.php?page=digital-marketing [L,QSA]
+RewriteRule ^seo-ai-seo/?$ index.php?page=seo-ai-seo [L,QSA]
+RewriteRule ^social-media-ads/?$ index.php?page=social-media-ads [L,QSA]
+RewriteRule ^custom-software-development/?$ index.php?page=custom-software-development [L,QSA]
+RewriteRule ^it-staff/?$ index.php?page=it-staff [L,QSA]
+
+# Handle blog pages
+RewriteRule ^blogs-ai-automation/?$ index.php?page=blogs-ai-automation [L,QSA]
+RewriteRule ^blogs-business-growth/?$ index.php?page=blogs-business-growth [L,QSA]
+RewriteRule ^blogs-custom-marketing/?$ index.php?page=blogs-custom-marketing [L,QSA]
+RewriteRule ^blogs-custom-software/?$ index.php?page=blogs-custom-software [L,QSA]
+RewriteRule ^blogs-it-staff/?$ index.php?page=blogs-it-staff [L,QSA]
+RewriteRule ^blogs-mobile-app/?$ index.php?page=blogs-mobile-app [L,QSA]
+RewriteRule ^blogs-social-marketing/?$ index.php?page=blogs-social-marketing [L,QSA]
+RewriteRule ^blogs-web-design/?$ index.php?page=blogs-web-design [L,QSA]
+
+# Handle other pages
+RewriteRule ^get-proposal/?$ index.php?page=get-proposal [L,QSA]
+RewriteRule ^book-an-expert/?$ index.php?page=book-an-expert [L,QSA]
+RewriteRule ^careers/?$ index.php?page=careers [L,QSA]
+RewriteRule ^partners/?$ index.php?page=partners [L,QSA]
+RewriteRule ^resources/?$ index.php?page=resources [L,QSA]
+RewriteRule ^coming-soon/?$ index.php?page=coming-soon [L,QSA]
+RewriteRule ^privacy-policy/?$ index.php?page=privacy-policy [L,QSA]
+RewriteRule ^terms-conditions/?$ index.php?page=terms-conditions [L,QSA]
+
+# ============================================================================
+# SECURITY HEADERS - OWASP, PCI DSS 3.2.1, Mozilla Observatory Compliant
+# ============================================================================
+
+# HTTP Strict Transport Security (HSTS) - Force HTTPS for 1 year, include subdomains, preload
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+# Content Security Policy (CSP) - Mitigate XSS and data injection attacks
+# Adjust script-src and style-src based on your actual external resources
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.tailwindcss.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self' https://www.google.com; frame-src 'self' https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;"
+
+# Permissions-Policy (formerly Feature-Policy) - Restrict browser API access
+Header always set Permissions-Policy "geolocation=(), camera=(), microphone=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+
+# X-Content-Type-Options - Prevent MIME type sniffing
+Header always set X-Content-Type-Options "nosniff"
+
+# X-Frame-Options - Prevent clickjacking attacks
+Header always set X-Frame-Options "DENY"
+
+# X-XSS-Protection - Enable XSS filter (legacy, but still useful)
+Header always set X-XSS-Protection "1; mode=block"
+
+# Referrer-Policy - Control referrer information
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Remove server information disclosure
+Header always unset X-Powered-By
+Header always unset Server
+
+# Cache static assets
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+</FilesMatch>
