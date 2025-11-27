@@ -131,10 +131,20 @@
                 </div>
                 <?php endif; ?>
                 
+                <?php
+                // Build a form action that respects installations in subdirectories (e.g., /aibitsol/)
+                $contactFormAction = '/backend/sendmail.php';
+                if (!empty($_SERVER['PHP_SELF'])) {
+                    $currentDir = rtrim(str_replace('\\', '/', dirname($_SERVER['PHP_SELF'])), '/');
+                    if ($currentDir && $currentDir !== '.') {
+                        $contactFormAction = $currentDir . $contactFormAction;
+                    }
+                }
+                ?>
                 <div id="contact-form-error" class="hidden mb-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
                     Please fill in all required fields.
                 </div>
-                <form id="contact-form" class="space-y-6" method="POST" action="/backend/sendmail.php" novalidate>
+                <form id="contact-form" class="space-y-6" method="POST" action="<?php echo htmlspecialchars($contactFormAction, ENT_QUOTES, 'UTF-8'); ?>" novalidate>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
