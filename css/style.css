@@ -936,36 +936,6 @@ html.modal-open {
     ring-color: #fecaca;
 }
 
-/* Zoom Schedule Modal Styles */
-#zoomScheduleModal {
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-}
-
-#zoomScheduleModal .zoom-form-alert {
-    display: none;
-    border-radius: 0.75rem;
-    padding: 0.75rem 1rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-#zoomScheduleModal .zoom-form-alert.show {
-    display: flex;
-}
-
-#zoomScheduleModal .zoom-form-alert.success {
-    background-color: #d1fae5;
-    color: #065f46;
-    border: 1px solid #34d399;
-}
-
-#zoomScheduleModal .zoom-form-alert.error {
-    background-color: #fee2e2;
-    color: #991b1b;
-    border: 1px solid #f87171;
-}
-
 /* Floating Icons Styles */
 .floating-icons {
     position: fixed;

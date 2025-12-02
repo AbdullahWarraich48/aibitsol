@@ -1,66 +1,208 @@
 <!-- Section: Hero -->
-<section class="relative text-white section-padding overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-blue-700/80"></div>
+<section class="relative section-padding overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-sky-100 text-slate-900">
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute inset-0 bg-white/50 mix-blend-overlay"></div>
+        <div class="absolute -top-20 -left-10 w-72 h-72 bg-blue-200/40 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 right-0 w-96 h-96 bg-violet-200/30 rounded-full blur-3xl"></div>
+        <div class="absolute top-20 right-1/4 w-20 h-20 bg-sky-200/40 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-16 left-1/3 w-16 h-16 bg-emerald-200/40 rounded-full blur-2xl"></div>
+    </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 ring-1 ring-white/20 mb-5">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span class="text-sm">Full-Funnel Growth Marketing</span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white shadow-sm ring-1 ring-blue-200/60 mb-5">
+                <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                <span class="text-sm text-blue-800 font-semibold uppercase tracking-wide">Full-Funnel Growth Marketing</span>
             </div>
-            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">Campaigns Built To Drive Revenue</h1>
-            <p class="text-xl text-blue-100 mb-2">Lead with compelling stories, follow with measurable impact.</p>
-            <p class="text-lg text-blue-100/90 mb-8">We design marketing motions that attract the right audience, nurture intent, and turn attention into sales pipeline.</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/?page=get-proposal" aria-label="Get a proposal" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center justify-center gap-2">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">Campaigns <span class="text-gradient">Built</span> To Drive Revenue</h1>
+            <p class="text-xl text-slate-600 mb-2">Lead with compelling stories, follow with measurable impact.</p>
+            <p class="text-lg text-slate-600/90 mb-8">We design marketing motions that attract the right audience, nurture intent, and turn attention into sales pipeline.</p>
+            <!-- <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/?page=get-proposal" aria-label="Get a proposal" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-lg font-semibold bg-primary text-white shadow hover:bg-primary/90 transition-colors">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="opacity-90"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     Get a Proposal
                 </a>
-                <a href="/?page=book-an-expert" aria-label="Book an expert" class="border-2 border-white/80 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition-colors inline-flex items-center justify-center gap-2">
+                <a href="/?page=book-an-expert" aria-label="Book an expert" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-lg font-semibold border border-primary text-primary bg-white hover:bg-primary hover:text-white transition-colors shadow">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="opacity-90"><path d="M8 7h8M6 11h12M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     Book an Expert
                 </a>
-            </div>
-            <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="/?page=book-an-expert" class="border border-white/30 bg-white/10 hover:bg-white hover:text-primary transition-colors px-6 py-3 rounded-full text-sm font-semibold inline-flex items-center justify-center">Schedule Meeting</a>
-                <a href="/?page=contact" class="border border-white/30 bg-white/10 hover:bg-white hover:text-primary transition-colors px-6 py-3 rounded-full text-sm font-semibold inline-flex items-center justify-center">Meet</a>
-                <a href="/?page=contact" class="border border-white/30 bg-white/10 hover:bg-white hover:text-primary transition-colors px-6 py-3 rounded-full text-sm font-semibold inline-flex items-center justify-center">WhatsApp</a>
-            </div>
-        </div>
-        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
-            <div class="bg-white/10 rounded-xl p-4 ring-1 ring-white/15">
-                <div class="text-2xl font-extrabold">4×</div>
-                <div class="text-sm text-blue-100">Average pipeline lift after integrated launch</div>
-            </div>
-            <div class="bg-white/10 rounded-xl p-4 ring-1 ring-white/15">
-                <div class="text-2xl font-extrabold">37%</div>
-                <div class="text-sm text-blue-100">Faster sales cycles with lifecycle automation</div>
-            </div>
-            <div class="bg-white/10 rounded-xl p-4 ring-1 ring-white/15">
-                <div class="text-2xl font-extrabold">62%</div>
-                <div class="text-sm text-blue-100">Lower CPL when creative + data stay aligned</div>
-            </div>
+            </div> -->
+            <!-- <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="/?page=book-an-expert" class="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold border border-primary text-primary bg-white hover:bg-primary hover:text-white transition-colors">Schedule Meeting</a>
+                <a href="/?page=contact" class="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold border border-primary text-primary bg-white hover:bg-primary hover:text-white transition-colors">Meet</a>
+                <a href="/?page=contact" class="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold border border-primary text-primary bg-white hover:bg-primary hover:text-white transition-colors">WhatsApp</a>
+            </div> -->
         </div>
     </div>
     <div class="sr-only">Source: https://aibitsol.com/ui-ux/</div>
     <!-- Reference: https://aibitsoft.com/ui-ux/ -->
 </section>
 
+<!-- Insights -->
+<section class="bg-transparent -mt-8 md:-mt-12 pb-4 md:pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="relative">
+            <div class="absolute -inset-0.5 bg-[conic-gradient(from_0deg,theme(colors.blue.500),theme(colors.indigo.500),theme(colors.purple.500),theme(colors.blue.500))] rounded-3xl blur opacity-30"></div>
+            <div id="marketing-insights" class="relative rounded-3xl bg-white/90 backdrop-blur-xl border border-slate-200 shadow-2xl overflow-hidden">
+                <div class="px-6 md:px-8 pt-6 md:pt-8">
+                    <div class="text-center">
+                        <h3 class="text-lg md:text-xl font-extrabold text-slate-900">Insights</h3>
+                        <p class="text-slate-600 text-sm">Key stats, issues, and solutions for custom marketing</p>
+                        <div class="hidden md:flex items-center justify-center gap-2 text-xs text-slate-500 mt-2">
+                            <span class="inline-flex items-center gap-1 px-2 py-1 rounded-full bg-slate-100 border border-slate-200">
+                                Updated
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-2 px-3 md:px-6 py-3 md:py-4 border-y border-slate-200" role="tablist" aria-label="Insights tabs">
+                    <button type="button" class="marketing-info-tab px-4 py-2 rounded-full text-sm font-semibold transition-colors" role="tab" aria-selected="true">Statistics</button>
+                    <button type="button" class="marketing-info-tab px-4 py-2 rounded-full text-sm font-semibold transition-colors" role="tab" aria-selected="false">Problems</button>
+                    <button type="button" class="marketing-info-tab px-4 py-2 rounded-full text-sm font-semibold transition-colors" role="tab" aria-selected="false">Solutions</button>
+                </div>
+                <div class="p-6 md:p-8">
+                    <div class="marketing-info-panel grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-sky-300/30 to-blue-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/80 backdrop-blur border border-slate-200 text-center shadow-sm">
+                                <div class="text-3xl font-black text-primary">4×</div>
+                                <p class="mt-1 text-xs md:text-sm text-slate-600">Pipeline lift with coordinated launches</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-300/30 to-purple-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/80 backdrop-blur border border-slate-200 text-center shadow-sm">
+                                <div class="text-3xl font-black text-primary">37%</div>
+                                <p class="mt-1 text-xs md:text-sm text-slate-600">Faster sales cycles via lifecycle automation</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-300/30 to-emerald-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/80 backdrop-blur border border-slate-200 text-center shadow-sm">
+                                <div class="text-3xl font-black text-primary">62%</div>
+                                <p class="mt-1 text-xs md:text-sm text-slate-600">Lower CPL when creative + data align</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-rose-300/30 to-amber-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/80 backdrop-blur border border-slate-200 text-center shadow-sm">
+                                <div class="text-3xl font-black text-primary">2×</div>
+                                <p class="mt-1 text-xs md:text-sm text-slate-600">More revenue from full-funnel programs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marketing-info-panel hidden grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-300/30 to-sky-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/70 backdrop-blur border border-slate-200 shadow-sm">
+                                <h4 class="font-semibold text-slate-900">Fragmented Messaging</h4>
+                                <p class="text-slate-600 text-sm mt-1">Campaigns feel disconnected across channels.</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-300/30 to-purple-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/70 backdrop-blur border border-slate-200 shadow-sm">
+                                <h4 class="font-semibold text-slate-900">Manual Handoffs</h4>
+                                <p class="text-slate-600 text-sm mt-1">Marketing-to-sales transitions lose context.</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-rose-300/30 to-amber-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/70 backdrop-blur border border-slate-200 shadow-sm">
+                                <h4 class="font-semibold text-slate-900">Slow Optimization</h4>
+                                <p class="text-slate-600 text-sm mt-1">Teams wait weeks for performance insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="marketing-info-panel hidden grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-sky-300/30 to-blue-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/70 backdrop-blur border border-slate-200 shadow-sm">
+                                <h4 class="font-semibold text-slate-900">Unified Creative + Data</h4>
+                                <p class="text-slate-600 text-sm mt-1">Storytelling aligned with analytics in every sprint.</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-indigo-300/30 to-purple-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/70 backdrop-blur border border-slate-200 shadow-sm">
+                                <h4 class="font-semibold text-slate-900">Lifecycle Automation</h4>
+                                <p class="text-slate-600 text-sm mt-1">Lead scoring, nurture, and routing handled automatically.</p>
+                            </div>
+                        </div>
+                        <div class="group relative">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-300/30 to-emerald-300/20 blur-xl opacity-0 group-hover:opacity-100 transition"></div>
+                            <div class="relative p-5 rounded-2xl bg-white/70 backdrop-blur border border-slate-200 shadow-sm">
+                                <h4 class="font-semibold text-slate-900">Real-Time Dashboards</h4>
+                                <p class="text-slate-600 text-sm mt-1">CAC, ROAS, and velocity dashboards for every stakeholder.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Missing: Contact -->
 
+<!-- Insights script -->
+<script>
+    (function(){
+        const container = document.getElementById('marketing-insights');
+        if(!container) return;
+        const tabs = container.querySelectorAll('.marketing-info-tab');
+        const panels = container.querySelectorAll('.marketing-info-panel');
+        let timer = null;
+        let current = 0;
+
+        function activate(index){
+            tabs.forEach((tab, i) => {
+                if(i === index){
+                    tab.classList.add('bg-primary','text-white','ring-1','ring-primary/30','shadow-sm');
+                    tab.classList.remove('text-primary','hover:bg-primary/10');
+                    tab.setAttribute('aria-selected','true');
+                } else {
+                    tab.classList.remove('bg-primary','text-white','ring-1','ring-primary/30','shadow-sm');
+                    tab.classList.add('text-primary','hover:bg-primary/10');
+                    tab.setAttribute('aria-selected','false');
+                }
+            });
+            panels.forEach((panel, i)=> {
+                if(i === index){
+                    panel.classList.remove('hidden');
+                } else {
+                    panel.classList.add('hidden');
+                }
+            });
+            current = index;
+        }
+
+        tabs.forEach((tab, i)=> tab.addEventListener('click', ()=> { activate(i); restart(); }));
+
+        function next(){ activate((current + 1) % tabs.length); }
+        function restart(){ if(timer) clearInterval(timer); timer = setInterval(next, 6000); }
+
+        activate(0);
+        restart();
+    })();
+</script>
+
 <!-- Section: Process | Make Every Interaction Effortless -->
-<section class="gradient-bg text-white section-padding">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-5xl font-bold mb-6">Attract. Nurture. Convert. Repeat.</h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">We build marketing systems that pair bold creative with always-on optimization, so every touchpoint earns attention and advances revenue.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/?page=digital-marketing" class="bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2" aria-label="View marketing services">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-                Explore Digital Marketing
-            </a>
-            <a href="/?page=book-an-expert" class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition-colors inline-flex items-center justify-center gap-2" aria-label="Get free consultation">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 7h8M6 11h12M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Book a Growth Audit
-            </a>
+<section class="bg-white section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-3xl p-8 md:p-12 text-white text-center shadow-xl">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Attract. Nurture. Convert. Repeat.</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">We build marketing systems that pair bold creative with always-on optimization, so every touchpoint earns attention and advances revenue.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/?page=digital-marketing" class="bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors shadow inline-flex items-center justify-center gap-2" aria-label="View marketing services">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    Explore Digital Marketing
+                </a>
+                <a href="/?page=book-an-expert" class="bg-white/10 text-white border border-white/30 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-colors inline-flex items-center justify-center gap-2 backdrop-blur" aria-label="Get free consultation">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 7h8M6 11h12M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Book a Growth Audit
+                </a>
+            </div>
         </div>
     </div>
     <!-- Reference: https://aibitsoft.com/ui-ux/ -->
@@ -103,11 +245,11 @@
                     </li>
                 </ul>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="/?page=book-an-expert" class="btn-primary text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center justify-center gap-2" aria-label="Get an expert appointment">
+                    <a href="/?page=book-an-expert" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-lg font-semibold bg-primary text-white shadow hover:bg-primary/90 transition-colors" aria-label="Get an expert appointment">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 7h8M6 11h12M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         Get an Expert Appointment
                     </a>
-                    <a href="/?page=get-proposal" class="border-2 border-primary text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary hover:text-white transition-colors inline-flex items-center justify-center gap-2" aria-label="Get started today">
+                    <a href="/?page=get-proposal" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-lg font-semibold border border-primary text-primary hover:bg-primary hover:text-white transition-colors" aria-label="Get started today">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                         Get Started Today
                     </a>
@@ -152,7 +294,7 @@
 <section class="bg-gray-50 section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Marketing Outcomes We Deliver</h2>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">Marketing <span class="text-gradient">Outcomes</span> We Deliver</h2>
             <p class="text-lg text-gray-600">From pipeline to lifetime value, every play we run ties back to the KPIs revenue teams rely on.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -201,7 +343,7 @@
 <section class="bg-white section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-12">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">The Cost Of Fragmented Marketing</h2>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">The Cost Of <span class="text-gradient">Fragmented</span> Marketing</h2>
             <p class="text-lg text-gray-600">When campaigns run in silos, budgets inflate while impact stalls.</p>
             <div class="text-5xl md:text-6xl font-extrabold text-primary mt-4">53%</div>
             <p class="text-gray-600 mt-2">of marketing leaders cite disconnected tooling as their top revenue blocker.</p>
@@ -234,7 +376,7 @@
 <section class="bg-white section-padding">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">UI/UX And Creatives Design</h2>
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">UI/UX And <span class="text-gradient">Creative</span> Design</h2>
             <p class="text-lg text-gray-600">Packages tailored for startups to enterprises. Transform your business with comprehensive design.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -262,7 +404,7 @@
                     <li>Design handoff via Figma/Sketch.</li>
                     <li>1-2 revision cycles.</li>
                 </ul>
-                <a href="/?page=get-proposal" class="mt-auto btn-primary text-white px-6 py-3 rounded-full text-base font-semibold inline-flex items-center justify-center">Get Started</a>
+                <a href="/?page=get-proposal" class="mt-auto inline-flex items-center justify-center px-6 py-3 rounded-full text-base font-semibold bg-primary text-white shadow hover:bg-primary/90 transition-colors">Get Started</a>
             </div>
             <!-- DesignPro -->
             <div class="rounded-2xl border-2 border-primary p-6 flex flex-col relative shadow-md">
@@ -289,7 +431,7 @@
                     <li>Multiple revision cycles (up to 3-4).</li>
                     <li>Developer-ready assets & documentation.</li>
                 </ul>
-                <a href="/?page=get-proposal" class="mt-auto btn-primary text-white px-6 py-3 rounded-full text-base font-semibold inline-flex items-center justify-center">Get Started</a>
+                <a href="/?page=get-proposal" class="mt-auto inline-flex items-center justify-center px-6 py-3 rounded-full text-base font-semibold bg-primary text-white shadow hover:bg-primary/90 transition-colors">Get Started</a>
             </div>
             <!-- DesignMax -->
             <div class="rounded-2xl border border-gray-200 p-6 flex flex-col hover:shadow-lg transition-shadow">
@@ -315,7 +457,7 @@
                     <li>Iterative user testing & validation.</li>
                     <li>Continuous collaboration with dev & product teams.</li>
                 </ul>
-                <a href="/?page=get-proposal" class="mt-auto btn-primary text-white px-6 py-3 rounded-full text-base font-semibold inline-flex items-center justify-center">Get Started</a>
+                <a href="/?page=get-proposal" class="mt-auto inline-flex items-center justify-center px-6 py-3 rounded-full text-base font-semibold bg-primary text-white shadow hover:bg-primary/90 transition-colors">Get Started</a>
                 </div>
             <!-- DesignForge -->
             <div class="rounded-2xl border border-gray-200 p-6 flex flex-col hover:shadow-lg transition-shadow">
@@ -341,7 +483,7 @@
                     <li>Enterprise-ready design system & component library.</li>
                     <li>Post-launch optimization & support.</li>
                 </ul>
-                <a href="/?page=get-proposal" class="mt-auto btn-primary text-white px-6 py-3 rounded-full text-base font-semibold inline-flex items-center justify-center">Get Started</a>
+                <a href="/?page=get-proposal" class="mt-auto inline-flex items-center justify-center px-6 py-3 rounded-full text-base font-semibold bg-primary text-white shadow hover:bg-primary/90 transition-colors">Get Started</a>
             </div>
         </div>
     </div>
@@ -351,19 +493,21 @@
 <!-- Missing: Success Stories -->
 
 <!-- Section: CTA -->
-<section class="gradient-bg text-white section-padding">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to elevate your UI/UX?</h2>
-        <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">Let’s craft inclusive, visually stunning experiences that convert and scale.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/?page=get-proposal" class="bg-white text-primary px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center gap-2" aria-label="Get a proposal">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Get a Proposal
-            </a>
-            <a href="/?page=book-an-expert" class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-primary transition-colors inline-flex items-center justify-center gap-2" aria-label="Book an expert">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 7h8M6 11h12M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Book an Expert
-            </a>
+<section class="bg-white section-padding">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-3xl p-8 md:p-12 text-white text-center shadow-xl">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to elevate your UI/UX?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">Let’s craft inclusive, visually stunning experiences that convert and scale.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/?page=get-proposal" class="bg-white text-blue-700 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-colors shadow inline-flex items-center justify-center gap-2" aria-label="Get a proposal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Get a Proposal
+                </a>
+                <a href="/?page=book-an-expert" class="bg-white/10 text-white border border-white/30 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/20 transition-colors inline-flex items-center justify-center gap-2 backdrop-blur" aria-label="Book an expert">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 7h8M6 11h12M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Book an Expert
+                </a>
+            </div>
         </div>
     </div>
     <!-- Reference: https://aibitsoft.com/ui-ux/ -->
