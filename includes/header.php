@@ -1731,7 +1731,7 @@
                                     <!-- Resources Grid -->
                                     <div class="grid grid-cols-3 gap-4 p-4">
                                         <!-- Web Design -->
-                                        <a href="/?page=blogs-custom-software" class="service-card bg-gray-50 rounded-xl p-4 hover:shadow-lg transition-all duration-300 cursor-pointer group block">
+                                        <a href="/?page=Websites" class="service-card bg-gray-50 rounded-xl p-4 hover:shadow-lg transition-all duration-300 cursor-pointer group block">
                                             <div class="flex items-center mb-4">
                                                 <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                                                     <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1796,7 +1796,7 @@
                                         </a>
                                         
                                         <!-- Custom Branding & Marketing Kit -->
-                                        <a href="/?page=custom-branding-marketing-kit" class="service-card bg-gray-50 rounded-xl p-4 hover:shadow-lg transition-all duration-300 cursor-pointer group block">
+                                        <a href="/?page=blogs-social-marketing"  class="service-card bg-gray-50 rounded-xl p-4 hover:shadow-lg transition-all duration-300 cursor-pointer group block">
                                             <div class="flex items-center mb-4">
                                                 <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                                                     <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -39,8 +39,13 @@ if (in_array($page, $partner_pages)) {
 
 // Blog landing temporarily hosted on the Web Design blog page
 if ($page === 'blog') {
-    header('Location: /?page=blogs-web-design', true, 302);
+    header('Location: /?page=blogs-web-design-full', true, 302);
     exit;
+}
+
+// Map legacy Web Design blog route to the full static export
+if ($page === 'blogs-web-design') {
+    $page = 'blogs-web-design-full';
 }
 
 $allowed_pages = [
@@ -50,7 +55,7 @@ $allowed_pages = [
     'custom-software-development', 'it-staff', 'get-proposal', 'book-an-expert',
     'blogs-ai-automation', 'blogs-business-growth', 'blogs-custom-marketing',
     'blogs-custom-software', 'blogs-it-staff', 'blogs-mobile-app', 'blogs-social-marketing',
-    'blogs-web-design', 'blogs-ui-ux-design', 'resources', 'coming-soon', 'hotel-about', 'seo-marketing', 'custom-branding-marketing-kit', 'resources-web-design', 'blogs-web-design-full',
+    'blogs-web-design', 'blogs-web-designs', 'blogs-ui-ux-design', 'resources', 'coming-soon', 'hotel-about', 'seo-marketing', 'custom-branding-marketing-kit', 'resources-web-design', 'blogs-web-design-full', 'Websites',
     'privacy-policy', 'terms-conditions'
 ];
 
@@ -91,6 +96,7 @@ $page_titles = [
     'blogs-mobile-app' => 'Mobile App Blog - AiBit Sol',
     'blogs-social-marketing' => 'Social Marketing Blog - AiBit Sol',
     'blogs-web-design' => 'Web Design Blog - AiBit Sol',
+    'blogs-web-designs' => 'Web Design Resources — Insights & Guides | AiBit Sol',
     'blogs-ui-ux-design' => 'UI/UX & Creative Design Blog - AiBit Sol',
     'resources' => 'Resources - AiBit Sol',
     'coming-soon' => 'Coming Soon - AiBit Sol',
@@ -99,6 +105,7 @@ $page_titles = [
     'custom-branding-marketing-kit' => 'Custom Branding & Marketing Kit - AiBit Sol',
     'resources-web-design' => 'Web Design Resources — Insights & Guides | AiBit Sol',
     'blogs-web-design-full' => 'Website Design & Development — Trust, Speed, Conversion | AiBit Sol',
+    'Websites' => 'Website Design & Development — Trust, Speed, Conversion | AiBit Sol',
     'privacy-policy' => 'Privacy Policy - AiBit Sol',
     'terms-conditions' => 'Terms & Conditions - AiBit Sol',
     '404' => '404 - Page Not Found'
@@ -144,6 +151,7 @@ $page_descriptions = [
     'custom-branding-marketing-kit' => 'Custom branding assets and marketing kits to make your brand unforgettable across every channel.',
     'resources-web-design' => 'Web design insights, checklists, and best practices to improve trust, speed, and conversions.',
     'blogs-web-design-full' => 'Outdated site costing trust? Learn how modern web design improves credibility, speed, accessibility, and conversions.',
+    'Websites' => 'Outdated site costing trust? Learn how modern web design improves credibility, speed, accessibility, and conversions.',
     'privacy-policy' => 'Learn how AiBit Sol collects, uses, and protects your personal information.',
     'terms-conditions' => 'Terms and conditions for using AiBit Sol\'s website and services.',
     '404' => 'The page you are looking for could not be found.'
