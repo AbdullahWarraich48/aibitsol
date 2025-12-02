@@ -4,6 +4,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/env_loader.php';
+
+loadEnvFile(__DIR__ . '/../.env');
 
 if (!function_exists('processContactFormSubmission')) {
     /**
@@ -58,16 +61,27 @@ if (!function_exists('processContactFormSubmission')) {
         $mail = new PHPMailer(true);
 
         try {
-            $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com';
-            $mail->SMTPAuth   = true;
-            $mail->Username   = 'aibitsofts@gmail.com';
-            $mail->Password   = 'jcaw ksjz wkrf qvaq'; // TODO: move to env before deployment
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Port       = 587;
+            $smtpHost = env_value('SMTP_HOST', 'smtp.gmail.com');
+            $smtpUser = env_value('SMTP_USERNAME', '');
+            $smtpPassword = env_value('SMTP_PASSWORD', '');
+            $smtpPort = (int) env_value('SMTP_PORT', 587);
+            $smtpEncryption = strtolower((string) env_value('SMTP_ENCRYPTION', 'tls'));
+            $fromEmail = env_value('SMTP_FROM_EMAIL', 'no-reply@example.com');
+            $fromName = env_value('CONTACT_FROM_NAME', 'AibitSol Contact Form');
+            $recipientEmail = env_value('CONTACT_RECIPIENT_EMAIL', $fromEmail);
 
-            $mail->setFrom('aibitsofts@gmail.com', 'AibitSol Contact Form');
-            $mail->addAddress('aibitsolpvt@gmail.com');
+            $mail->isSMTP();
+            $mail->Host       = $smtpHost;
+            $mail->SMTPAuth   = true;
+            $mail->Username   = $smtpUser;
+            $mail->Password   = $smtpPassword;
+            $mail->SMTPSecure = $smtpEncryption === 'ssl'
+                ? PHPMailer::ENCRYPTION_SMTPS
+                : PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->Port       = $smtpPort;
+
+            $mail->setFrom($fromEmail, $fromName);
+            $mail->addAddress($recipientEmail);
 
             if (!empty($formData['email'])) {
                 $mail->addReplyTo($formData['email']);
